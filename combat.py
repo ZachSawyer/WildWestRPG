@@ -3,8 +3,12 @@ import random
 def dmg():
     return random.randint(1, 5)
 
-def life():
+def player_hp():
     pass
+
+def crit_chance(crit):
+    damage = None
+    return damage * crit
 
 def combat():
     damage = dmg()
