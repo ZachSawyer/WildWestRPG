@@ -11,8 +11,8 @@ def combat():
     dmg_desc = None
 
     if damage < 3:
-        dmg_desc = "Weak!"
+        dmg_desc = "weak"
     else:
-        dmg_desc = "Strong!"
+        dmg_desc = "crushing"
 
-    print(f"The enemy does {damage} to you! {dmg_desc}")
+    print(f"The enemy deals {dmg_desc} {damage} damage to you!")
