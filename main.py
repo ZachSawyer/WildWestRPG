@@ -1,5 +1,6 @@
 from openfile import open_file
 from utils import clrscr
+from combat import combat
 
 def intro_text():
     clrscr()
@@ -9,6 +10,7 @@ def intro_text():
 
 def main():
     intro_text()
+    combat()
 
 if __name__ == '__main__':
     main()
