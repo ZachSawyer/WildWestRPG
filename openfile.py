@@ -2,9 +2,9 @@ import json
 from utils import clrscr, sys_exit
 
 # Open JSON File with Error Handling
-def open_file():
+def open_file(j_file):
     try:
-        with open("dialogue.json", "r") as f:
+        with open(j_file, "r") as f:
             return json.load(f)
     except FileNotFoundError:
         clrscr()

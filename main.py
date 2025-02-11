@@ -4,7 +4,7 @@ from combat import combat
 
 def intro_text():
     clrscr()
-    dialogue = open_file()
+    dialogue = open_file("dialogue.json")
     print(dialogue["intro"])
     print(dialogue["town_desc"])
 
