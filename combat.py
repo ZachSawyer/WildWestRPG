@@ -8,4 +8,11 @@ def life():
 
 def combat():
     damage = dmg()
-    print(f"The enemy does {damage} to you!")
+    dmg_desc = None
+
+    if damage < 3:
+        dmg_desc = "Weak!"
+    else:
+        dmg_desc = "Strong!"
+
+    print(f"The enemy does {damage} to you! {dmg_desc}")
